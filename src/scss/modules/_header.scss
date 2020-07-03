@@ -1,0 +1,18 @@
+@import '../base/vars';
+
+.header {
+    color: #fff;
+    background-image: $img-bg;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--home {
+        background-position: center right;
+        height: 100vh;
+    }
+    &--inner {
+        background-position: 20% 30%;
+        height: 5.5rem;
+        border-bottom: 3px solid $color-base;
+    }
+}

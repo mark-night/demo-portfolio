@@ -1,0 +1,6 @@
+@mixin position-to-edge($edges, $position: absolute) {
+    position: $position;
+    @each $edge in $edges {
+        #{$edge}: 0;
+    }
+}

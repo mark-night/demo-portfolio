@@ -1,0 +1,9 @@
+@import './vars';
+
+@function pop-fg($bg-color) {
+    @if (lightness($bg-color) > 50) {
+        @return $color-dark;
+    } @else {
+        @return $color-light;
+    }
+}

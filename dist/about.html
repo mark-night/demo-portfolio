@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio website for UI/UX designer John Doe." />
+    <meta name="keywords" content="UI, UX, design, web development" />
+    <title>About Me | UI/UX Designer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header header--inner">
+      <div class="wrapper">
+        <nav class="navbar">
+          <img src="img/logo.png" alt="logo" class="navbar__logo" />
+          <ul class="navbar__menu">
+            <li><a href="index.html" class="navbar__menuitem">Home</a></li>
+            <li><a href="about.html" class="navbar__menuitem navbar__menuitem--current">About</a></li>
+            <li><a href="work.html" class="navbar__menuitem">Work</a></li>
+            <li><a href="contact.html" class="navbar__menuitem">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- About Section-A: Info -->
+      <section class="section section--about-section-a text-center padding-y-3">
+        <div class="wrapper">
+          <h2 class="section__title">About Me</h2>
+          <div class="section__sep"></div>
+          <p class="lead">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quas temporibus accusantium.
+          </p>
+          <div class="grid-area">
+            <img src="img/about.jpg" alt="picture of me" class="cell cell--image" />
+            <div class="cell cell--bio bg-light">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti ratione repudiandae id vitae
+                dicta voluptatum beatae ipsam aperiam ducimus, nemo placeat est exercitationem temporibus soluta
+                laudantium, voluptatibus nesciunt perferendis!
+              </p>
+            </div>
+            <div class="cell cell--award cell--award-1">
+              <i class="cell--award__icon fas fa-award fa-3x"></i>
+              <h3>Award One</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, mollitia.</p>
+            </div>
+            <div class="cell cell--award cell--award-2">
+              <i class="cell--award__icon fas fa-award fa-3x"></i>
+              <h3>Award Two</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, mollitia.</p>
+            </div>
+            <div class="cell cell--award cell--award-3">
+              <i class="cell--award__icon fas fa-award fa-3x"></i>
+              <h3>Award Three</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, mollitia.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section-B: Progress Bars -->
+      <section class="section section--about-b bg-dark padding-y-3">
+        <div class="wrapper">
+          <h2 class="section__title text-center">Technical Skills</h2>
+          <div class="section__sep"></div>
+          <h4 class="section__subtitle">Graphics:</h4>
+          <div class="section__progress">
+            <div class="bar bar-80"></div>
+          </div>
+          <h4 class="section__subtitle">Photography:</h4>
+          <div class="section__progress">
+            <div class="bar bar-75"></div>
+          </div>
+          <h4 class="section__subtitle">HTML/CSS/JS:</h4>
+          <div class="section__progress">
+            <div class="bar bar-90"></div>
+          </div>
+          <h4 class="section__subtitle">Python:</h4>
+          <div class="section__progress">
+            <div class="bar bar-60"></div>
+          </div>
+          <h4 class="section__subtitle">Wordpress:</h4>
+          <div class="section__progress">
+            <div class="bar bar-55"></div>
+          </div>
+          <h4 class="section__subtitle">Dev Env:</h4>
+          <div class="section__progress">
+            <div class="bar bar-85"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section-C: Logos -->
+      <section class="section padding-y-4 bg-light">
+        <div class="wrapper">
+          <div class="grid-1-4 grid-1-4--about-c">
+            <img src="img/about-logos/logo-envato.png" alt="envato logo" class="cell" />
+            <img src="img/about-logos/logo-magento.png" alt="magento logo" class="cell" />
+            <img src="img/about-logos/logo-woocommerce.png" alt="woocommerce logo" class="cell" />
+            <img src="img/about-logos/logo-wordpress.png" alt="wordpress logo" class="cell" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section-D: Testimonials -->
+      <section class="section padding-y-4">
+        <div class="wrapper">
+          <h2 class="section__title text-center">Testimonials</h2>
+          <div class="section__sep"></div>
+          <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsum!</p>
+          <div class="grid-1-4 grid-1-4--about-d">
+            <div class="cell">
+              <p class="cell__testimonial">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sed nemo consequuntur ex sequi
+                laboriosam, officiis quos similique distinctio at qui dolore facere cum quo quisquam tenetur ad quis
+                accusantium.
+              </p>
+              <ul class="cell__person">
+                <li>
+                  <img class="cell__avatar" src="img/testimonials/person1.jpg" alt="testimonial person-1 picture" />
+                </li>
+                <li class="cell__name">Sam Smith, New York</li>
+              </ul>
+            </div>
+            <div class="cell">
+              <p class="cell__testimonial">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sed nemo consequuntur ex sequi
+                laboriosam, officiis quos similique distinctio at qui dolore facere cum quo quisquam tenetur ad quis
+                accusantium.
+              </p>
+              <ul class="cell__person">
+                <li>
+                  <img class="cell__avatar" src="img/testimonials/person2.jpg" alt="testimonial person-2 picture" />
+                </li>
+                <li class="cell__name">Jane Doe, Los Angeles</li>
+              </ul>
+            </div>
+            <div class="cell">
+              <p class="cell__testimonial">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sed nemo consequuntur ex sequi
+                laboriosam, officiis quos similique distinctio at qui dolore facere cum quo quisquam tenetur ad quis
+                accusantium.
+              </p>
+              <ul class="cell__person">
+                <li>
+                  <img class="cell__avatar" src="img/testimonials/person3.jpg" alt="testimonial person-3 picture" />
+                </li>
+                <li class="cell__name">Hua Wu, Shanghai</li>
+              </ul>
+            </div>
+            <div class="cell">
+              <p class="cell__testimonial">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sed nemo consequuntur ex sequi
+                laboriosam, officiis quos similique distinctio at qui dolore facere cum quo quisquam tenetur ad quis
+                accusantium.
+              </p>
+              <ul class="cell__person">
+                <li>
+                  <img class="cell__avatar" src="img/testimonials/person4.jpg" alt="testimonial person-4 picture" />
+                </li>
+                <li class="cell__name">Sara Williams, London</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer-content">
+        <p class="footer-content__sentence">Copyright &copy; 2020. All Rights Reserved.</p>
+        <div class="footer-content__social">
+          <i class="footer-content__social__icon fab fa-facebook"></i>
+          <i class="footer-content__social__icon fab fa-twitter"></i>
+          <i class="footer-content__social__icon fab fa-github"></i>
+          <i class="footer-content__social__icon fab fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+@mixin grid-3-3 {
+    .grid-3-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        .cell {
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+            position: relative;
+            background-color: $color-base;
+            overflow: hidden;
+
+            &__image {
+                display: block;
+                height: auto;
+                transition: transform 0.3s ease-in-out;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    padding-top: 75%;
+                    overflow: hidden;
+                }
+
+                & img {
+                    @include position-to-edge([top, left]);
+                    width: 100%;
+                    height: auto;
+                    line-height: 0;
+                }
+            }
+
+            &__text {
+                @include position-to-edge([top left bottom right]);
+                text-align: center;
+                color: $color-light;
+                z-index: 1;
+                opacity: 0;
+                transform: translateY(-20%);
+                transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+                transition-delay: 0.3s;
+
+                &-wrap {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: '';
+                @include position-to-edge([top left]);
+                width: 100%;
+                height: 100%;
+                background-color: inherit;
+                opacity: 0.9;
+                transform: skewX(-45deg) scaleX(2) translateX(-110%);
+                transition: transform 0.8s ease-in-out;
+            }
+            &:hover {
+                &::after {
+                    transform: skewX(-45deg) scaleX(2) translateX(0%);
+                }
+                .cell {
+                    &__image {
+                        transform: scale(1.2);
+                    }
+                    &__text {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+            .work-info {
+                &__category {
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                    opacity: 0.8;
+                    margin: 0;
+                }
+                &__title {
+                    font-size: 2rem;
+                    padding: 0 1rem;
+                    margin-top: 5px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

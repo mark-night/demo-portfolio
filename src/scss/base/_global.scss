@@ -1,0 +1,71 @@
+@import './vars';
+@import './funcs';
+
+// normalize
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    background: #fff;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: $color-dark;
+}
+ul {
+    list-style: none;
+}
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+img {
+    width: 100%;
+}
+
+// globally shared custom class rules
+.wrapper {
+    max-width: $width-content;
+    margin: auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+}
+.text-center {
+    text-align: center;
+}
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+@for $i from 1 through 4 {
+    .padding-y-#{$i} {
+        padding: #{$i}rem 0;
+    }
+}
+@for $i from 1 through 4 {
+    .margin-y-#{$i} {
+        margin: #{$i}rem 0;
+    }
+}
+.bg- {
+    &light {
+        background-color: $color-light;
+        color: pop-fg($color-light);
+    }
+    &dark {
+        background-color: $color-dark;
+        color: pop-fg($color-dark);
+    }
+    &base {
+        background-color: $color-base;
+        color: pop-fg($color-base);
+    }
+}

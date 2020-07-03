@@ -1,0 +1,37 @@
+@import '../base/vars';
+
+@mixin grid-area {
+    .grid-area {
+        display: grid;
+        grid-template-areas:
+            'image      bio         bio'
+            'award-1    award-2     award-3';
+        gap: 1.2rem;
+
+        .cell {
+            &--image {
+                grid-area: image;
+            }
+            &--bio {
+                grid-area: bio;
+                border-left: 3px solid $color-base;
+                padding: 0.8rem;
+            }
+            &--award-1 {
+                grid-area: award-1;
+            }
+            &--award-2 {
+                grid-area: award-2;
+            }
+            &--award-3 {
+                grid-area: award-3;
+            }
+            &--award {
+                &__icon {
+                    color: $color-base;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}

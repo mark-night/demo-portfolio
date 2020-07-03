@@ -1,0 +1,28 @@
+@import '../base/vars';
+
+.footer {
+    background-color: $color-dark;
+    color: $color-medium;
+    height: 5rem;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        &__social__icon {
+            margin-right: 1rem;
+            border: 2px solid;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            line-height: 1.8rem;
+            text-align: center;
+
+            &:hover {
+                color: $color-base;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import '../base/vars';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    &__logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__menu {
+        display: flex;
+
+        & li {
+            padding: 1rem 1.5rem;
+        }
+    }
+    &__menuitem {
+        color: #fff;
+        text-transform: uppercase;
+        // existing transparent border prevent 'popping' if manipulate border on hovering, as the border is already there
+        border-bottom: 2px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+            border-color: $color-medium;
+        }
+
+        &--current {
+            border-color: $color-base;
+        }
+    }
+}

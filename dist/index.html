@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio website for UI/UX designer John Doe." />
+    <meta name="keywords" content="UI, UX, design, web development" />
+    <title>John Doe | UI/UX Designer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header header--home">
+      <div class="wrapper">
+        <nav class="navbar">
+          <img src="img/logo.png" alt="logo" class="navbar__logo" />
+          <ul class="navbar__menu">
+            <li><a href="index.html" class="navbar__menuitem navbar__menuitem--current">Home</a></li>
+            <li><a href="about.html" class="navbar__menuitem">About</a></li>
+            <li><a href="work.html" class="navbar__menuitem">Work</a></li>
+            <li><a href="contact.html" class="navbar__menuitem">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hero">
+          <h1 class="hero__headline">
+            I am John Doe, the
+            <span
+              class="txt-type"
+              data-wait="2000"
+              data-words='["Web Developper", "UI/UX Designer", "Explorer"]'
+            ></span>
+          </h1>
+          <p class="hero__content lead">
+            I specialize in Web Development, both frontend and backend.
+          </p>
+          <a href="work.html" class="btn btn--light">View My Work</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home Section-A: Specialize -->
+      <section class="section text-center padding-y-3">
+        <div class="wrapper">
+          <h2 class="section__title">
+            I Specialize In
+          </h2>
+          <div class="section__sep"></div>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Dolorum, expedita!
+          </p>
+          <div class="grid-1-4 grid-1-4--home-a">
+            <div class="cell">
+              <i class="cell__icon fas fa-file-alt fa-2x"></i>
+              <h3>Lorem.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia labore exercitationem laboriosam sint
+                dolores temporibus commodi rem, quasi id repellendus.
+              </p>
+            </div>
+            <div class="cell">
+              <i class="cell__icon fas fa-desktop fa-2x"></i>
+              <h3>Lorem.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia labore exercitationem laboriosam sint
+                dolores temporibus commodi rem, quasi id repellendus.
+              </p>
+            </div>
+            <div class="cell">
+              <i class="cell__icon fas fa-object-ungroup fa-2x"></i>
+              <h3>Lorem.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia labore exercitationem laboriosam sint
+                dolores temporibus commodi rem, quasi id repellendus.
+              </p>
+            </div>
+            <div class="cell">
+              <i class="cell__icon fas fa-thumbs-up fa-2x"></i>
+              <h3>Lorem.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia labore exercitationem laboriosam sint
+                dolores temporibus commodi rem, quasi id repellendus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home Section-B: Stats -->
+      <section class="section text-center padding-y-2">
+        <div class="grid-1-4 grid-1-4--home-b">
+          <div class="cell">
+            <ul>
+              <li><i class="cell__icon fas fa-users fa-3x"></i></li>
+              <li class="cell__title">Clients</li>
+              <li class="cell__number">100</li>
+            </ul>
+          </div>
+          <div class="cell">
+            <ul>
+              <li><i class="cell__icon fas fa-award fa-3x"></i></li>
+              <li class="cell__title">Awards</li>
+              <li class="cell__number">3</li>
+            </ul>
+          </div>
+          <div class="cell">
+            <ul>
+              <li><i class="cell__icon fas fa-hourglass-start fa-3x"></i></li>
+              <li class="cell__title">Hours Worked</li>
+              <li class="cell__number">3500</li>
+            </ul>
+          </div>
+          <div class="cell">
+            <ul>
+              <li><i class="cell__icon fas fa-code-branch fa-3x"></i></li>
+              <li class="cell__title">Projects Completed</li>
+              <li class="cell__number">135</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home Section-C: Process -->
+      <section class="section wrapper text-center padding-y-2">
+        <h2 class="section__title">My Creative Process</h2>
+        <div class="section__sep"></div>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, natus modi nulla quas tempore ex sed totam
+          magnam non eos.
+        </p>
+        <div class="grid-1-4 grid-1-4--home-c">
+          <div class="cell">
+            <i class="cell__icon margin-y-2 fas fa-file-alt fa-4x">
+              <div class="cell__step">1</div>
+            </i>
+            <h3 class="cell__title">Discuss The Project</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab nemo magni aliquid reiciendis fugit?</p>
+          </div>
+          <div class="cell">
+            <i class="cell__icon margin-y-2 fas fa-desktop fa-4x">
+              <div class="cell__step">2</div>
+            </i>
+            <h3 class="cell__title">Brainstorm & Concept</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab nemo magni aliquid reiciendis fugit?</p>
+          </div>
+          <div class="cell">
+            <i class="cell__icon margin-y-2 fas fa-object-ungroup fa-4x">
+              <div class="cell__step">3</div>
+            </i>
+            <h3 class="cell__title">UI/UX Planning</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab nemo magni aliquid reiciendis fugit?</p>
+          </div>
+          <div class="cell">
+            <i class="cell__icon margin-y-2 fas fa-thumbs-up fa-4x">
+              <div class="cell__step">4</div>
+            </i>
+            <h3 class="cell__title">Interaction</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab nemo magni aliquid reiciendis fugit?</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer-content">
+        <p class="footer-content__sentence">Copyright &copy; 2020. All Rights Reserved.</p>
+        <div class="footer-content__social">
+          <i class="footer-content__social__icon fab fa-facebook"></i>
+          <i class="footer-content__social__icon fab fa-twitter"></i>
+          <i class="footer-content__social__icon fab fa-github"></i>
+          <i class="footer-content__social__icon fab fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/typewriter.js"></script>
+  </body>
+</html>

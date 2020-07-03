@@ -1,0 +1,117 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+@mixin grid-1-4 {
+    .grid-1-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        .cell {
+            &__title {
+                font-size: 1.5rem;
+            }
+        }
+
+        &--home-a {
+            margin-top: 3rem;
+            gap: 1rem;
+            .cell {
+                &__icon {
+                    color: $color-base;
+                    padding-bottom: 0.4rem;
+                }
+            }
+        }
+
+        &--home-b {
+            .cell {
+                padding: 3rem 0;
+                &:nth-child(odd) {
+                    background-color: $color-light;
+                }
+                &:nth-child(even) {
+                    background-color: $color-medium;
+                }
+                &__number {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+                li {
+                    line-height: 2;
+                }
+            }
+        }
+
+        &--home-c {
+            gap: 1.5rem;
+
+            .cell {
+                &__icon {
+                    position: relative;
+                    background-color: $color-dark;
+                    color: $color-light;
+                    width: 10rem;
+                    height: 10rem;
+                    line-height: 10rem;
+                    border-radius: 50%;
+                    text-align: center;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background-color: $color-base;
+                        width: 11rem;
+                        height: 11rem;
+                        line-height: 11rem;
+
+                        .cell__step {
+                            background: $color-dark;
+                        }
+                    }
+                }
+                &__step {
+                    font-family: 'Dosis', sans-serif;
+                    font-weight: 500;
+                    @include position-to-edge([top, right]);
+                    font-size: 1.75rem;
+                    width: 3rem;
+                    height: 3rem;
+                    line-height: 3rem;
+                    text-align: center;
+                    background-color: $color-base;
+                    border-radius: 50%;
+                    transition: all 0.5s;
+                }
+            }
+        }
+        &--about-c {
+            gap: 2rem;
+
+            .cell {
+                width: 70%;
+                margin: auto;
+            }
+        }
+        &--about-d {
+            gap: 0.5rem;
+
+            .cell {
+                &__person {
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                }
+                &__testimonial {
+                    border: 1px solid $color-medium;
+                    border-radius: 5px;
+                    padding: 0.5rem;
+                }
+                &__avatar {
+                    width: 3.125rem;
+                    height: 3.125rem;
+                    border-radius: 50%;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
