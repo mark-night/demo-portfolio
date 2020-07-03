@@ -445,34 +445,16 @@ img {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-.section .grid-3-3 .cell__image::before {
-  content: '';
-  display: block;
-  padding-top: 75%;
-  overflow: hidden;
-}
-
-.section .grid-3-3 .cell__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  line-height: 0;
-}
-
 .section .grid-3-3 .cell__text {
   position: absolute;
-  top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
-  text-align: center;
+  top: 50%;
   color: #f4f4f4;
   z-index: 1;
   opacity: 0;
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -481,12 +463,18 @@ img {
           transition-delay: 0.3s;
 }
 
-.section .grid-3-3 .cell__text-wrap {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 100%;
+.section .grid-3-3 .cell__text__category {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.section .grid-3-3 .cell__text__title {
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin-top: 5px;
+  font-weight: 400;
 }
 
 .section .grid-3-3 .cell::after {
@@ -518,22 +506,8 @@ img {
 
 .section .grid-3-3 .cell:hover .cell__text {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.section .grid-3-3 .cell .work-info__category {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  opacity: 0.8;
-  margin: 0;
-}
-
-.section .grid-3-3 .cell .work-info__title {
-  font-size: 2rem;
-  padding: 0 1rem;
-  margin-top: 5px;
-  font-weight: 400;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .footer {
