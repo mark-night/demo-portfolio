@@ -1,4 +1,5 @@
 @import '../base/vars';
+@import '../base/mixins';
 
 .header {
     color: #fff;
@@ -7,12 +8,26 @@
     background-repeat: no-repeat;
 
     &--home {
-        background-position: center right;
+        background-position: center center;
         height: 100vh;
+        max-height: 1024px;
+
+        @include tablet {
+            height: 30rem;
+        }
+        @include phone-landscape {
+            height: 100vh;
+        }
     }
     &--inner {
         background-position: 20% 30%;
         height: 5.5rem;
+        border-bottom: 3px solid $color-base;
+    }
+
+    @include phone {
+        background-position: 20% 30%;
+        height: 10rem;
         border-bottom: 3px solid $color-base;
     }
 }

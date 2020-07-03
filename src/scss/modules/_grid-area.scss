@@ -1,4 +1,5 @@
 @import '../base/vars';
+@import '../base/mixins';
 
 @mixin grid-area {
     .grid-area {
@@ -8,28 +9,65 @@
             'award-1    award-2     award-3';
         gap: 1.2rem;
 
+        @include phone {
+            grid-template-areas:
+                'image'
+                'bio'
+                'award-1'
+                'award-2'
+                'award-3';
+        }
+
         .cell {
-            &--image {
-                grid-area: image;
+            @each $cell in [image bio award-1 award-2 award-3] {
+                &--#{$cell} {
+                    grid-area: $cell;
+                }
             }
             &--bio {
-                grid-area: bio;
                 border-left: 3px solid $color-base;
                 padding: 0.8rem;
-            }
-            &--award-1 {
-                grid-area: award-1;
-            }
-            &--award-2 {
-                grid-area: award-2;
-            }
-            &--award-3 {
-                grid-area: award-3;
             }
             &--award {
                 &__icon {
                     color: $color-base;
                     margin: 1rem;
+                }
+            }
+        }
+        &--contact-a {
+            gap: 1.2rem;
+            margin-bottom: 1.2rem;
+            grid-template-areas:
+                'name       email'
+                'subject    phone'
+                'message    message';
+
+            @include phone {
+                grid-template-areas:
+                    'name'
+                    'email'
+                    'phone'
+                    'subject'
+                    'message';
+            }
+
+            .form {
+                @each $field in [name email subject phone message] {
+                    &__#{$field} {
+                        grid-area: $field;
+                    }
+                }
+                &__message {
+                    height: 6rem;
+                }
+            }
+            .cell {
+                padding: 0.5rem 1rem;
+                font-family: 'Dosis', sans-serif;
+                &:focus {
+                    outline: none;
+                    border: 1px solid $color-base;
                 }
             }
         }

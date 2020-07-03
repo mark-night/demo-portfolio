@@ -1,9 +1,14 @@
 @import '../base/vars';
+@import '../base/mixins';
 
 .navbar {
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
+    @include phone {
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__logo {
         width: 70px;
@@ -15,6 +20,10 @@
 
         & li {
             padding: 1rem 1.5rem;
+
+            @include phone {
+                padding: 1rem;
+            }
         }
     }
     &__menuitem {

@@ -20,6 +20,14 @@
                     color: $color-base;
                     padding-bottom: 0.4rem;
                 }
+
+                @include phone {
+                    padding: 1rem 0;
+                    border-bottom: 1px solid $color-light;
+                    &:last-child {
+                        border: none;
+                    }
+                }
             }
         }
 
@@ -39,6 +47,10 @@
                 li {
                     line-height: 2;
                 }
+
+                @include phone {
+                    padding: 2rem 0 1rem 0;
+                }
             }
         }
 
@@ -57,11 +69,22 @@
                     text-align: center;
                     transition: all 0.5s;
 
+                    @include tablet {
+                        width: 15vw;
+                        height: 15vw;
+                        line-height: 15vw;
+                        font-size: 5vw;
+                    }
+                    @include phone {
+                        width: 10rem;
+                        height: 10rem;
+                        line-height: 10rem;
+                        font-size: 4rem;
+                    }
+
                     &:hover {
                         background-color: $color-base;
-                        width: 11rem;
-                        height: 11rem;
-                        line-height: 11rem;
+                        transform: scale(1.2);
 
                         .cell__step {
                             background: $color-dark;
@@ -80,6 +103,19 @@
                     background-color: $color-base;
                     border-radius: 50%;
                     transition: all 0.5s;
+
+                    @include tablet {
+                        width: 5vw;
+                        height: 5vw;
+                        line-height: 5vw;
+                        font-size: 3vw;
+                    }
+                    @include phone {
+                        width: 3rem;
+                        height: 3rem;
+                        line-height: 3rem;
+                        font-size: 1.75rem;
+                    }
                 }
             }
         }

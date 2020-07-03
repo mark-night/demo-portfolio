@@ -1,13 +1,28 @@
 @import '../base/vars';
+@import '../base/mixins';
 
 .hero {
     text-align: center;
     padding-top: 20%;
 
+    @include tablet {
+        padding-top: 10%;
+    }
+    @include phone {
+        display: none;
+    }
+    @include phone-landscape {
+        display: block;
+        padding-top: 5vh;
+    }
+
     &__headline {
         font-size: 4rem;
         line-height: 1.2;
         font-weight: 400;
+        @include phone-landscape {
+            font-size: 12vh;
+        }
     }
 
     &__content {

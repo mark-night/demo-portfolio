@@ -1,15 +1,25 @@
 @import '../base/vars';
+@import '../base/mixins';
 
 .footer {
     background-color: $color-dark;
     color: $color-medium;
     height: 5rem;
 
+    @include phone {
+        height: 7rem;
+    }
+
     .footer-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
+
+        @include phone {
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
 
         &__social__icon {
             margin-right: 1rem;
